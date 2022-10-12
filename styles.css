@@ -1,0 +1,13 @@
+/* nav bar*/
+/* logo principal */
+#isologo img {
+    width: 25%;
+    margin: auto;
+    display: block;
+}
+/* materiales */
+
+.container-woods img {
+    width: 10%;
+    border-radius: 50%;
+}
