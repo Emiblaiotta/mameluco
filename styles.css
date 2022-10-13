@@ -78,11 +78,22 @@ li > a {
 
 
 /* materiales */
-.container-woods {
-    margin: 100px;
+.container_woods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
-.container-woods img {
-    width: 10%;
+.container_woods img {
     border-radius: 50%;
 }
+
+/* footer */
+#mainfooter {
+    display: block;
+    text-align: center;
+}
+
+/* contacto */
