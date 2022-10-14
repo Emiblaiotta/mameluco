@@ -1,18 +1,19 @@
-
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #1A1F24;
     color: #DED8BF;
 }
+
 h2 {
     margin-left: 30px;
 }
 
-*{
-    margin:0px;
-    padding:0px;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* Titulo */
@@ -23,7 +24,7 @@ h2 {
 
 /* Nav bar */
 #navbar div {
-    background-color:#16191E;
+    background-color: #16191E;
     width: 100%;
     height: 100px;
     align-content: center;
@@ -36,21 +37,21 @@ h2 {
     flex-wrap: wrap;
 }
 
-.enlaces > li {
+.enlaces>li {
     list-style-type: none;
     background-color: #f3f3f3;
     padding: 5px 5%;
-    margin:1%;
+    margin: 1%;
     border-radius: 5px;
     border: solid 1px black;
 }
 
-li > a {
-    color:black;
+li>a {
+    color: black;
     text-decoration: none;
 }
 
-.enlaces > li:hover{
+.enlaces>li:hover {
     background-color: #DED8BF;
 }
 
@@ -60,12 +61,14 @@ li > a {
     margin: auto;
     display: block;
 }
+
 /* sobre nosotros*/
 #about {
     margin: 30px;
     text-align: center;
     height: 100px;
 }
+
 /* productos*/
 #products {
     display: flex;
@@ -97,3 +100,30 @@ li > a {
 }
 
 /* contacto */
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid #B87333;;
+    border-radius: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 60px;
+    text-align: left;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
