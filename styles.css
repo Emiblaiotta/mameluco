@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,11 +14,6 @@ body {
 
 h2 {
     margin-left: 30px;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
 }
 
 /* Titulo */
@@ -177,4 +177,17 @@ textarea {
 textarea {
     vertical-align: top;
     height: 5em;
+}
+
+.boton {
+
+    background-color: #f3f3f3;
+    color:black;
+    border-radius: 5px;
+    border: solid 1px black;
+    width: 45%;
+}
+
+.boton:hover {
+    background-color: #DED8BF;
 }

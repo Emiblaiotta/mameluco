@@ -85,15 +85,20 @@
             <form action="">
                 <div class="form_group">
                     <label for="name"><b>Nombre</b></label>
-                    <input type="text">
+                    <input type="text" id="name" name="name" placeholder="Ingrese su Nombre y Apellido">
                 </div>
                 <div class="form_group">
                     <label for="email"><b>Email</b></label>
-                    <input type="email">
+                    <input type="email" id="email" name="email" placeholder="Ingrese su mail de contacto">
                 </div><br>
                 <div class="form_group">
                     <label for="mensaje"><b>Mensaje</b></label>
-                    <textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+                    <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <br>
+                    <input class="boton" type="reset" value="Borrar">
+                    <input class="boton" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
