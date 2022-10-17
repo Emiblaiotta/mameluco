@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mameluco | Taller de diseño</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/065a78474b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -82,25 +83,59 @@
     <section id="contact">
         <h2>Envianos un mensaje</h2><br>
         <div class="container_contact">
-            <form action="">
-                <div class="form_group">
+            <form action="" name="formulario" id="formulario">
+
+                <div class="form_group" id="group_form">
                     <label for="name"><b>Nombre</b></label>
-                    <input type="text" id="name" name="name" placeholder="Ingrese su Nombre y Apellido">
+                    
+                    <span class="form_group_input">
+                        <input type="text" id="name" name="name" placeholder="Ingrese su Nombre y Apellido">
+                        <i class="validacion__estado-validar fa-solid fa-circle-xmark"></i>
+                    </span>
+
+                    <p class="formulario__input-error"> El Nombre solo puede contener letras y espacios.</p>
+                    <br><br>
                 </div>
-                <div class="form_group">
+
+                <div class="form_group" id="group_correo">
+
                     <label for="email"><b>Email</b></label>
-                    <input type="email" id="email" name="email" placeholder="Ingrese su mail de contacto">
+
+                    <span class="form_group_input">
+                        <input type="email" id="email" name="email" placeholder="Ingrese su mail de contacto">
+                        <i class="validacion__estado-validar fa-solid fa-circle-xmark"></i>
+                    </span>
+
+                    <p class="formulario__input-error"> El campo Email no puede estar vacio y debe ser de la forma ejemplo@mail.com</p>
+                    <br><br>
+
                 </div><br>
-                <div class="form_group">
+
+                <div class="form_group" id="group_mensaje">
                     <label for="mensaje"><b>Mensaje</b></label>
                     <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <p class="formulario__mensaje">El mensaje debe tener contenido</p>
                 </div>
-                <div>
+
+                <div class="form_group" id="grupo_terminos">
+                    <label id="formulario_checkbox">
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos"> Acepto los terminos y condiciones.
+                    </label>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor complete el formulario correctamente</p>
+                </div>
+
+                <div class="form_group">
                     <br>
                     <input class="boton" type="reset" value="Borrar">
-                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton" name="enviar" type="submit" value="Enviar"><br> <br>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
                 </div>
+
             </form>
+            <script src="validacion.js"></script>
         </div>
     </section><br><br>
 

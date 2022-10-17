@@ -156,7 +156,7 @@ form {
     width: 400px;
     padding: 1em;
     border: 2px solid #B87333;
-    ;
+    
     border-radius: 1em;
 }
 
@@ -164,6 +164,19 @@ label {
     display: inline-block;
     width: 60px;
     text-align: left;
+    cursor: pointer;
+}
+
+.formulario__input-error{
+    display: none;
+    margin-bottom: 0;
+}
+
+.formulario__input-error-active {
+    display: block;
+}
+.validacion__estado-validar{
+    opacity: 0;
 }
 
 input,
@@ -171,12 +184,30 @@ textarea {
     font: 1em sans-serif;
     width: 300px;
     box-sizing: border-box;
-    border: 1px solid #999;
+    border: 1px solid #999 transparent;
+    height: 27px;
+    line-height: 27px;
+    transition: 0.5s ease all;
+}
+
+input:focus, textarea:focus{
+    border: 3px solid rgb(190, 108, 0);
+    outline: none;
 }
 
 textarea {
     vertical-align: top;
-    height: 5em;
+    height: 7em;
+}
+
+.formulario_checkbox{
+    width: auto;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#formulario_checkbox{
+    width: auto;
 }
 
 .boton {
@@ -186,8 +217,65 @@ textarea {
     border-radius: 5px;
     border: solid 1px black;
     width: 45%;
+    cursor: pointer;
+    transition: 0.1s ease all;
 }
 
 .boton:hover {
     background-color: #DED8BF;
+}
+
+.formulario__mensaje{
+    height: 27px;
+    line-height: 27px;
+    display: none;
+    color: red;
+    text-align: center;
+}
+
+.formulario__mensaje-active{
+    display:block;
+}
+
+.formulario__mensaje-exito{
+    color: green;
+    text-align: center;
+    display:none;
+}
+
+.formulario__mensaje-exito-active{
+    display:block;
+}
+
+.form_group-correcto .validacion__estado-validar{
+    color:#1ed12d;
+    opacity:1;
+}
+
+.form_group-incorrecto label{
+    color:#bb2929;
+    opacity:1;
+}
+
+.form_group-incorrecto .validacion__estado-validar{
+    color:#bb2929;
+    opacity:1;
+}
+
+.form_group-incorrecto input{
+    border: 3px solid #bb2929;
+}
+
+@media screen and (max-width:800px){
+    form {
+        display:flex;
+        flex-direction: column;
+    }
+    .boton{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 }
