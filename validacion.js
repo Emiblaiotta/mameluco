@@ -9,8 +9,10 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
-var NombreCorrecto = 0;
-var EmailCorrecto = 0;
+const check = {
+        Nombre: true,
+        Email: true,
+}
 
 const validar = (e) => {
     switch (e.target.name) {
@@ -21,14 +23,14 @@ const validar = (e) => {
                 document.querySelector('#group_form i').classList.remove('fa-circle-xmark');
                 document.querySelector('#group_form i').classList.add('fa-circle-check');
                 document.querySelector('#group_form .formulario__input-error').classList.remove('formulario__input-error-active');
-                NombreCorrecto=1;
+                check['Nombre']=true;
             } else {
                 document.getElementById('group_form').classList.add('form_group-incorrecto');
                 document.getElementById('group_form').classList.remove('form_group-correcto');
                 document.querySelector('#group_form i').classList.remove('fa-circle-check');
                 document.querySelector('#group_form i').classList.add('fa-circle-xmark');
                 document.querySelector('#group_form .formulario__input-error').classList.add('formulario__input-error-active');
-                NombreCorrecto=0;
+                check['Nombre']=false;
             }
         break;
         case "email":
@@ -38,14 +40,14 @@ const validar = (e) => {
                 document.querySelector('#group_correo i').classList.remove('fa-circle-xmark');
                 document.querySelector('#group_correo i').classList.add('fa-circle-check');
                 document.querySelector('#group_correo .formulario__input-error').classList.remove('formulario__input-error-active');
-                EmailCorrecto=1;
+                check['Email']=true;
             } else {
                 document.getElementById('group_correo').classList.add('form_group-incorrecto');
                 document.getElementById('group_correo').classList.remove('form_group-correcto');
                 document.querySelector('#group_correo i').classList.remove('fa-circle-check');
                 document.querySelector('#group_correo i').classList.add('fa-circle-xmark');
                 document.querySelector('#group_correo .formulario__input-error').classList.add('formulario__input-error-active');
-                EmailCorrecto=0;
+                check['Email']=false;
             }
         break;
         //case "mensaje":
@@ -56,22 +58,25 @@ const validar = (e) => {
 }
 
 inputs.forEach((input) => {
-    input.addEventListener('keyup', validar );
-    input.addEventListener('blur', validar );
+    input.addEventListener('keyup', validar);
+    input.addEventListener('blur', validar);
 });
 
 formulario.addEventListener('submit',(e) => {
     e.preventDefault();
 
 const terminos = document.getElementById('terminos');
-if(NombreCorrecto == 1 && EmailCorrecto == 1){
+console.log('terminos');
+if(check.Nombre && check.Email && terminos.checked){
     formulario.reset();
 
     document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-active');
+    document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-active');
     setTimeout(() => {
         document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-active');
     }, 5000);
-    document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-active');
+    check['Nombre']=false;
+    check['Email']=false;
 
     document.querySelectorAll('.form_group-correcto').forEach((icono) => {
         icono.classList.remove('form_group-correcto');
