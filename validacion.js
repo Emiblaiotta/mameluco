@@ -66,7 +66,6 @@ formulario.addEventListener('submit',(e) => {
     e.preventDefault();
 
 const terminos = document.getElementById('terminos');
-console.log('terminos');
 if(check.Nombre && check.Email && terminos.checked){
     formulario.reset();
 
@@ -75,6 +74,7 @@ if(check.Nombre && check.Email && terminos.checked){
     setTimeout(() => {
         document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-active');
     }, 5000);
+    
     check['Nombre']=false;
     check['Email']=false;
 
