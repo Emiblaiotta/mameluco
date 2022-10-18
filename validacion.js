@@ -64,14 +64,15 @@ formulario.addEventListener('submit',(e) => {
     e.preventDefault();
 
 const terminos = document.getElementById('terminos');
-if(NombreCorrecto == 1 && EmailCorrecto == 1){
+console.log('terminos');
+if(NombreCorrecto == 1 && EmailCorrecto == 1 && terminos.value == check){
     formulario.reset();
 
     document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-active');
+    document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-active');
     setTimeout(() => {
         document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-active');
     }, 5000);
-    document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-active');
 
     document.querySelectorAll('.form_group-correcto').forEach((icono) => {
         icono.classList.remove('form_group-correcto');
