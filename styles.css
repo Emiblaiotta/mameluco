@@ -13,7 +13,10 @@ body {
 }
 
 h2 {
-    margin-left: 30px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 1em;
 }
 
 /* Titulo */
@@ -56,11 +59,15 @@ li>a {
 }
 
 /* logo principal */
-#isologo img {
-    width: 25%;
-    margin: auto;
-    display: block;
+.isologo {
+    text-align: center;
 }
+.isologo img {
+    width: 50%;
+    margin:0px auto;
+}
+
+
 
 /* sobre nosotros*/
 #about {
@@ -71,13 +78,6 @@ li>a {
 
 /* productos*/
 
-/*.contenedor_imagen {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: 100px;
-}
-*/
 .contenedor_imagen div {
     display: inline-flex;
     flex-direction: row;
@@ -85,16 +85,18 @@ li>a {
     flex-wrap: wrap;
     margin: 35px 35px;
     overflow: hidden;
+    align-content: center;
 
 }
 
 .image {
-    height: 250px;
-    width: 400px;
+    height: 200px;
+    width: 20%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: all .6s;
+    border-radius: 10px;
 
 }
 
@@ -120,11 +122,17 @@ li>a {
 
 /* servicios*/
 
+.services {
+    border: solid 1px white;
+    padding: 3em;
+}
 
 /* materiales */
 
 .h2_materiales {
     text-align: center;
+    margin-top: 5em;
+    font-size: 2.5em;
 }
 
 .container_woods {
@@ -133,10 +141,19 @@ li>a {
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
+    padding-bottom: 5em;
 }
 
 .container_woods img {
     border-radius: 50%;
+}
+
+.container_woods div {
+    text-align: center;
+}
+
+.container_woods div p {
+    font-size: 2em;
 }
 
 /* footer */
@@ -148,16 +165,21 @@ li>a {
 /* contacto */
 
 #contact>h2 {
-    text-align: center;
+    text-align: left;
+    padding: 5px;
+    margin-left: 10%;
+    margin-bottom: 10px;
 }
 
+
 form {
-    margin: 0 auto;
-    width: 400px;
+    margin-left: 10%;
+    width: 30%;
     padding: 1em;
     border: 2px solid #B87333; 
     border-radius: 1em;
 }
+
 
 label {
     display: inline-block;
