@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mameluco | Taller de diseño</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="/favicon/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/065a78474b.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +15,7 @@
     <header id="mainheader">
         <h1 class="logo">Mameluco</h1>
         <nav id="navbar">
-            <div class="container">
+            <div class="container-nav">
                 <ul class="enlaces">
                     <li><a href="#about"><b>Sobre nosotros</b></a></li>
                     <li><a href="#products"><b>Productos</b></a></li>
@@ -27,10 +27,10 @@
         </nav>
         <div class="isologo">
             <div>
-                <img src="/Logos mameluco/mameluco.png" alt="imagen mameluco">
+                <img src="/Logos mameluco/mameluco.png" alt="Logo mameluco">
             </div>
-            
-            </div>
+
+        </div>
         </div>
     </header>
 
@@ -39,8 +39,8 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, similique.</p>
     </section>
 
-    <h2>Productos</h2>
     <section id="products">
+        <h2>Productos</h2>
         <div class="contenedor_imagen">
             <div class="product1 image"></div>
             <div class="product2 image"></div>
@@ -49,10 +49,8 @@
         </div>
     </section>
 
-    <div class="container">
-        <h2>Nuestros servicios</h2>
-    </div>
     <section class="services" id="services">
+        <h2>Nuestros servicios</h2>
         <div>
             <img src="" alt="servicio1">
             <p>Lorem ipsum dolor sit amet.</p>
@@ -63,9 +61,8 @@
         </div>
     </section>
 
-    <h2 class="h2_materiales">Materiales</h2>
-
     <section class="container_woods" id="materials">
+        <h2>Materiales</h2>
         <div class="wood1">
             <img src="maderas/petiribi.jpg" alt="Petiribi" height="200 px" width="200 px">
             <p>Petiribí</p>
@@ -90,13 +87,13 @@
     <br><br><br>
 
     <section id="contact">
-        <h2>Contacto</h2><br>
-        <div class="container-contact">
+        <h2>Contacto | Ubicación</h2>
+        <div id="prueba">
             <form action="" name="formulario" id="formulario">
 
                 <div class="form_group" id="group_form">
                     <label for="name"><b>Nombre</b></label>
-                    
+
                     <span class="form_group_input">
                         <input type="text" id="name" name="name" placeholder="Ingrese su Nombre y Apellido">
                         <i class="validacion__estado-validar fa-solid fa-circle-xmark"></i>
@@ -115,7 +112,8 @@
                         <i class="validacion__estado-validar fa-solid fa-circle-xmark"></i>
                     </span>
 
-                    <p class="formulario__input-error"> El campo Email no puede estar vacio y debe ser de la forma ejemplo@mail.com</p>
+                    <p class="formulario__input-error"> El campo Email no puede estar vacio y debe ser de la forma
+                        ejemplo@mail.com</p>
                     <br><br>
 
                 </div><br>
@@ -128,39 +126,42 @@
 
                 <div class="form_group" id="grupo_terminos">
                     <label id="formulario_checkbox">
-                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos"> Acepto los terminos y condiciones.
+                        <input class="formulario_checkbox" type="checkbox" name="terminos" id="terminos"> Acepto los
+                        terminos y condiciones.
                     </label>
                 </div>
 
                 <div class="formulario__mensaje" id="formulario__mensaje">
-                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor complete el formulario correctamente</p>
+                    <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error:</b> Por favor complete el formulario
+                        correctamente</p>
                 </div>
 
                 <div class="form_group">
                     <br>
                     <input class="boton" type="reset" value="Borrar">
                     <input class="boton" name="enviar" type="submit" value="Enviar"><br> <br>
-                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente
+                    </p>
                 </div>
 
             </form>
             <script src="validacion.js"></script>
-        </div>
-    </section><br><br>
+
+            <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6562946567406!2d-58.69084346816924!3d-34.56225680033659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbc4bd38fa263%3A0x84c7d499270f47c2!2sAv.%20Tte.%20Gral.%20Ricchieri%20%26%20Av.%20San%20Mart%C3%ADn%2C%20Bella%20Vista%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1666409669064!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>   
+    </section>
 
     <footer id="mainfooter">
-        <h2>Ubicacion</h2><br>
-        <div>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6562946567406!2d-58.69084346816924!3d-34.56225680033659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbc4bd38fa263%3A0x84c7d499270f47c2!2sAv.%20Tte.%20Gral.%20Ricchieri%20%26%20Av.%20San%20Mart%C3%ADn%2C%20Bella%20Vista%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1666409669064!5m2!1ses-419!2sar" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <br>
         <div>
             <a href="https://www.instagram.com/mamelucodi/" target="_blank"><img
-                    src="/Logos mameluco/Instagram_logo_2016.svg.jpeg" height="50px" width="50px"></a>
+                    src="/Logos mameluco/Instagram_logo_2016.svg.jpeg" height="30px" width="30px"></a>
         </div>
     </footer>
-    
+
 </html>

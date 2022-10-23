@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Teko:wght@300&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,25 +16,36 @@ body {
 }
 
 h2 {
-    font-size: 2.5em;
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5em;
     text-align: center;
     margin-top: 5%;
     margin-bottom: 1em;
+    padding-top: 50px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Titulo */
 .logo {
-    padding: 1em;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Teko', sans-serif;
+    font-size: 3em;
+    margin-left: 3em;
 }
 
 /* Nav bar */
+
 #navbar div {
     background-color: #16191E;
     width: 100%;
     height: 100px;
     align-content: center;
     justify-content: center;
+    padding-top: 55px;
 }
 
 .enlaces {
@@ -44,14 +58,16 @@ h2 {
     list-style-type: none;
     background-color: #f3f3f3;
     padding: 5px 5%;
-    margin: 1%;
-    border-radius: 5px;
-    border: solid 1px black;
+    margin: center;
+    border-radius: 10px;
+    height: 2em;
 }
 
 li>a {
-    color: black;
     text-decoration: none;
+    font-size: x-large;
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .enlaces>li:hover {
@@ -78,6 +94,10 @@ li>a {
 
 /* productos*/
 
+#products h2 {
+    padding-top: 50px;
+}
+
 .contenedor_imagen div {
     display: inline-flex;
     flex-direction: row;
@@ -90,7 +110,7 @@ li>a {
 }
 
 .image {
-    height: 200px;
+    height: 400px;
     width: 20%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,25 +143,19 @@ li>a {
 /* servicios*/
 
 .services {
-    border: solid 1px white;
     padding: 3em;
 }
 
 /* materiales */
 
-.h2_materiales {
-    text-align: center;
-    margin-top: 5em;
-    font-size: 2.5em;
-}
-
-.container_woods {
-    display: flex;
+.container_woods div {
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
     padding-bottom: 5em;
+    margin: 50px;
 }
 
 .container_woods img {
@@ -154,6 +168,7 @@ li>a {
 
 .container_woods div p {
     font-size: 2em;
+    font-family: 'Teko', sans-serif;
 }
 
 /* footer */
@@ -164,16 +179,23 @@ li>a {
 
 /* contacto */
 
+
+#prueba {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    
+}
+
 #contact>h2 {
     text-align: left;
-    padding: 5px;
-    margin-left: 10%;
+    padding: 0px;
+    padding-left: 170px;
     margin-bottom: 10px;
 }
 
 
 form {
-    margin-left: 10%;
     width: 30%;
     padding: 1em;
     border: 2px solid #B87333; 
@@ -285,6 +307,15 @@ textarea {
 
 .form_group-incorrecto input{
     border: 3px solid #bb2929;
+}
+
+/*footer*/
+
+#mainfooter {
+    height: 50px;
+    margin-top: 100px;
+    background-color: grey;
+    padding-top: 10px;
 }
 
 @media screen and (max-width:800px){
