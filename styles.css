@@ -59,7 +59,7 @@ p {
     background-color: #f3f3f3;
     padding: 5px 5%;
     margin: center;
-    border-radius: 10px;
+    border-radius: 0.5em;
     height: 2em;
 }
 
@@ -89,13 +89,21 @@ li>a {
 #about {
     margin: 30px;
     text-align: center;
-    height: 100px;
+    height: 400px;
 }
 
-/* productos*/
+#about p {
+    font-size: 2em;
+}
+
+/* trabajos*/
+#products {
+    height: 800px;
+}
 
 #products h2 {
-    padding-top: 50px;
+    padding: 10px;
+    text-align: center;
 }
 
 .contenedor_imagen {
@@ -118,19 +126,19 @@ li>a {
 }
 
 .product1 {
-    background-image: url(/1.jpeg);
+    background-image: url(/Trabajos/1.jpg);
 }
 
 .product2 {
-    background-image: url(/2.jpeg);
+    background-image: url(/Trabajos/2.jpg);
 }
 
 .product3 {
-    background-image: url(/3.jpeg);
+    background-image: url(/Trabajos/3.png);
 }
 
 .product4 {
-    background-image: url(/4.jpeg);
+    background-image: url(/Trabajos/4.jpg);
 }
 
 .image:hover {
@@ -141,6 +149,13 @@ li>a {
 
 .services {
     padding: 3em;
+    text-align: auto;
+    height: 600px;
+}
+
+.services h2 {
+    margin: 0px;
+    padding: 0px;
 }
 
 /* materiales */
@@ -187,6 +202,10 @@ li>a {
 
 /* contacto */
 
+#contact {
+    width: 100%;
+    height: 600px;
+}
 
 #prueba {
     display: flex;
@@ -196,10 +215,11 @@ li>a {
 }
 
 #contact>h2 {
+    width: 100%;
     text-align: left;
-    padding: 0px;
-    padding-left: 170px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin-bottom: auto;
+
 }
 
 
