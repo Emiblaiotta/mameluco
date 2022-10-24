@@ -19,13 +19,16 @@ h2 {
     font-family: 'Teko', sans-serif;
     font-size: 3.5em;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 1em;
-    padding-top: 50px;
+    margin: 0px;
+    padding: 20px;
 }
 
 p {
     font-family: 'Roboto', sans-serif;
+}
+
+#mainheader {
+    height: 920px;
 }
 
 /* Titulo */
@@ -38,9 +41,16 @@ p {
 }
 
 /* Nav bar */
+#navbar {
+    background-image: url(/fondos/maderas\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
+}
 
 #navbar div {
-    background-color: #16191E;
+    background-color: rgba(22, 25, 30, 0.6);
     width: 100%;
     height: 100px;
     align-content: center;
@@ -78,32 +88,30 @@ li>a {
 .isologo {
     text-align: center;
 }
+
 .isologo img {
     width: 50%;
-    margin:0px auto;
+    margin: 0px auto;
 }
 
 
 
 /* sobre nosotros*/
 #about {
-    margin: 30px;
+    height: 920px;
+    margin: 10px;
     text-align: center;
-    height: 400px;
 }
 
 #about p {
     font-size: 2em;
+    padding: 30px;
 }
 
 /* trabajos*/
 #products {
-    height: 800px;
-}
-
-#products h2 {
-    padding: 10px;
-    text-align: center;
+    height: 920px;
+    margin: 10px;
 }
 
 .contenedor_imagen {
@@ -111,17 +119,17 @@ li>a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .image {
     height: 400px;
-    width: 19%;
+    width: 20%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    transition: all .6s;
+    transition: all .3s;
     border-radius: 10px;
+    border: solid 2px #DED8BF;
 
 }
 
@@ -148,17 +156,23 @@ li>a {
 /* servicios*/
 
 .services {
-    padding: 3em;
-    text-align: auto;
-    height: 600px;
-}
-
-.services h2 {
-    margin: 0px;
     padding: 0px;
+    text-align: auto;
+    height: 920px;
+    margin: 10px;
 }
 
 /* materiales */
+
+
+.container_woods {
+    height: 920px;
+    width: 100%;
+    /*background-image: url(/fondos/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    align-items: center;
+}
 
 .container_woods div {
     display: flex;
@@ -166,7 +180,6 @@ li>a {
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
-    padding-bottom: 5em;
 }
 
 .container_woods img {
@@ -203,22 +216,24 @@ li>a {
 /* contacto */
 
 #contact {
+    background-image: url(/fondos/maderas\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 600px;
+    height: 920px;
 }
 
 #prueba {
     display: flex;
     flex-direction: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+
 }
 
 #contact>h2 {
     width: 100%;
-    text-align: left;
-    padding: 10px;
-    margin-bottom: auto;
+    text-align: center;
+    margin: 0px;
 
 }
 
@@ -226,7 +241,7 @@ li>a {
 form {
     width: 30%;
     padding: 1em;
-    border: 2px solid #B87333; 
+    border: 2px solid #B87333;
     border-radius: 1em;
 }
 
@@ -238,7 +253,7 @@ label {
     cursor: pointer;
 }
 
-.formulario__input-error{
+.formulario__input-error {
     display: none;
     margin-bottom: 0;
 }
@@ -246,14 +261,15 @@ label {
 .formulario__input-error-active {
     display: block;
 }
-.validacion__estado-validar{
+
+.validacion__estado-validar {
     opacity: 0;
 }
 
 input,
 textarea {
     font: 1em sans-serif;
-    width: 300px;
+    width: 350px;
     box-sizing: border-box;
     border: 1px solid #999 transparent;
     height: 27px;
@@ -261,7 +277,8 @@ textarea {
     transition: 0.5s ease all;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     border: 3px solid rgb(190, 108, 0);
     outline: none;
 }
@@ -271,20 +288,20 @@ textarea {
     height: 7em;
 }
 
-.formulario_checkbox{
+.formulario_checkbox {
     width: auto;
     cursor: pointer;
     margin-right: 10px;
 }
 
-#formulario_checkbox{
+#formulario_checkbox {
     width: auto;
 }
 
 .boton {
 
     background-color: #f3f3f3;
-    color:black;
+    color: black;
     border-radius: 5px;
     border: solid 1px black;
     width: 45%;
@@ -296,7 +313,7 @@ textarea {
     background-color: #DED8BF;
 }
 
-.formulario__mensaje{
+.formulario__mensaje {
     height: 27px;
     line-height: 27px;
     display: none;
@@ -304,58 +321,58 @@ textarea {
     text-align: center;
 }
 
-.formulario__mensaje-active{
-    display:block;
+.formulario__mensaje-active {
+    display: block;
 }
 
-.formulario__mensaje-exito{
+.formulario__mensaje-exito {
     color: green;
     text-align: center;
-    display:none;
+    display: none;
 }
 
-.formulario__mensaje-exito-active{
-    display:block;
+.formulario__mensaje-exito-active {
+    display: block;
 }
 
-.form_group-correcto .validacion__estado-validar{
-    color:#1ed12d;
-    opacity:1;
+.form_group-correcto .validacion__estado-validar {
+    color: #1ed12d;
+    opacity: 1;
 }
 
-.form_group-incorrecto label{
-    color:#bb2929;
-    opacity:1;
+.form_group-incorrecto label {
+    color: #bb2929;
+    opacity: 1;
 }
 
-.form_group-incorrecto .validacion__estado-validar{
-    color:#bb2929;
-    opacity:1;
+.form_group-incorrecto .validacion__estado-validar {
+    color: #bb2929;
+    opacity: 1;
 }
 
-.form_group-incorrecto input{
+.form_group-incorrecto input {
     border: 3px solid #bb2929;
 }
+
 
 /*footer*/
 
 #mainfooter {
     height: 50px;
-    margin-top: 100px;
-    background-color: grey;
-    padding-top: 10px;
+    padding: 10px;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     form {
-        display:flex;
+        display: flex;
         flex-direction: column;
     }
-    .boton{
+
+    .boton {
         width: 100%;
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
     }
-    
+
 }
