@@ -98,20 +98,17 @@ li>a {
     padding-top: 50px;
 }
 
-.contenedor_imagen div {
-    display: inline-flex;
+.contenedor_imagen {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 35px 35px;
-    overflow: hidden;
-    align-content: center;
+    justify-content: space-evenly;
 
 }
 
 .image {
     height: 400px;
-    width: 20%;
+    width: 19%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -149,13 +146,12 @@ li>a {
 /* materiales */
 
 .container_woods div {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
     padding-bottom: 5em;
-    margin: 50px;
 }
 
 .container_woods img {
@@ -167,7 +163,19 @@ li>a {
 }
 
 .container_woods div p {
-    font-size: 2em;
+    font-size: 3em;
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.centrado {
+    position: absolute;
+    margin-top: 80px;
+    font-size: 2.5em;
+    color: #16191E;
     font-family: 'Teko', sans-serif;
 }
 
