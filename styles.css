@@ -220,12 +220,13 @@ li>a {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 920px;
+    height: auto;
 }
 
 #prueba {
     display: flex;
-    flex-direction: wrap;
+    /*flex-direction: wrap;*/
+    flex-wrap: wrap;
     justify-content: space-evenly;
 
 }
@@ -239,7 +240,7 @@ li>a {
 
 
 form {
-    width: 30%;
+    /*width: 30%;*/
     padding: 1em;
     border: 2px solid #B87333;
     border-radius: 1em;
