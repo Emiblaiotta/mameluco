@@ -113,6 +113,7 @@ li>a {
 #products {
     /*height: 920px;*/
     margin: 10px;
+    padding: 35px;
 }
 
 .contenedor_imagen {
@@ -173,6 +174,7 @@ li>a {
     background-size: cover;
     background-repeat: no-repeat;*/
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .container_woods div {
