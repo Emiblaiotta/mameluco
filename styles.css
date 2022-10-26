@@ -41,6 +41,7 @@ p {
 }
 
 /* Nav bar */
+
 #navbar {
     background-image: url(/fondos/maderas\ 1.jpg);
     background-position: center;
@@ -232,7 +233,6 @@ li>a {
     /*flex-direction: wrap;*/
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 #contact>h2 {
@@ -380,4 +380,28 @@ textarea {
         flex-wrap: wrap;
     }
 
+}
+
+@media screen and (max-width:600px) {
+    .enlaces {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    #navbar div {
+        width: 100%;
+        height: 250px;
+        padding-top: 10px;
+    }
+
+    .enlaces>li {
+        list-style-type: none;
+        background-color: #f3f3f3;
+        padding: 5px 5%;
+        text-align: center;
+        border-radius: 0.5em;
+        height: 2em;
+    }
 }
