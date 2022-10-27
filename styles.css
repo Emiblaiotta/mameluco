@@ -248,6 +248,7 @@ form {
     padding: 1em;
     border: 2px solid #B87333;
     border-radius: 1em;
+    height: 0%;
 }
 
 
@@ -371,15 +372,32 @@ textarea {
     form {
         display: flex;
         flex-direction: column;
+        align-content: center;
+        width: 80%;
     }
 
-    .boton {
+    label{
+        text-align: center;
         width: 100%;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
     }
 
+    input {
+        width: 95%;
+        text-align: center;
+    }
+
+    textarea, .boton {
+        width: 100%;
+    }
+
+    #botones{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .form_group {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:600px) {
