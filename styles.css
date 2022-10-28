@@ -216,6 +216,8 @@ li>a {
 #mainfooter {
     display: block;
     text-align: center;
+    height: 50px;
+    padding: 10px;
 }
 
 /* contacto */
@@ -231,7 +233,7 @@ li>a {
 #prueba {
     display: flex;
     /*flex-direction: wrap;*/
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
 }
 
@@ -242,6 +244,17 @@ li>a {
 
 }
 
+#tituloubicacion{
+    display:none;
+}
+.Ubicacion {
+    margin: 0.5em;
+}
+#Ubicacion{ 
+    width: 100%;
+    height: 350px;
+    padding-right: 2%;
+}
 
 form {
     /*width: 30%;*/
@@ -280,7 +293,7 @@ textarea {
     border: 1px solid #999 transparent;
     height: 27px;
     line-height: 27px;
-    transition: 0.5s ease all;
+    transition: 0.2s ease all;
 }
 
 input:focus,
@@ -312,7 +325,7 @@ textarea {
     border: solid 1px black;
     width: 45%;
     cursor: pointer;
-    transition: 0.1s ease all;
+    /*transition: 0.1s ease all;*/
 }
 
 .boton:hover {
@@ -360,15 +373,52 @@ textarea {
     border: 3px solid #bb2929;
 }
 
-
-/*footer*/
-
-#mainfooter {
-    height: 50px;
-    padding: 10px;
+@media screen and (min-width:1080px) {
+    
+    .Ubicacion{
+        width: 85%;
+        max-width: 600px;
+    }   
 }
-
+@media screen and (min-width:800px) and (max-width:1080px){
+    #contact{
+        height: auto;
+    }
+    #prueba{
+        flex-wrap: wrap;
+    }
+    #spantitulo{
+        display: none;
+    }
+    #tituloubicacion{
+        display: block;
+    }
+    
+    .Ubicacion{
+        width: 85%;
+        max-width: 600px;
+        height: auto;
+    }  
+}    
 @media screen and (max-width:800px) {
+    #contact{
+        height: auto;
+    }
+    #prueba{
+        flex-wrap: wrap;
+    }
+    #spantitulo{
+        display: none;
+    }
+
+    #tituloubicacion{
+        display: block;
+    }
+
+    .Ubicacion{
+        width: 85%;
+        height: auto;
+    }  
     form {
         display: flex;
         flex-direction: column;
@@ -382,7 +432,7 @@ textarea {
     }
 
     input {
-        width: 95%;
+        width: 90%;
         text-align: center;
     }
 
@@ -392,8 +442,7 @@ textarea {
 
     #botones{
         width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin: 5% 25% 0% 25%;
     }
     .form_group {
         text-align: center;
